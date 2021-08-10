@@ -12,13 +12,15 @@
             char gender = 'F';
 
             double price1 = 2100.0;
-            double price2 = 650.50;
+            double price2 = 6500.50;
+            double price3= 450.20;
             double measure = 53.12345;
 
-            System.out.println("ProductS:");
+            System.out.println("Producta for sale:");
             System.out.printf("%s, which price is R$ %.2f %n", product1, price1);
             System.out.printf("%s, which price is R$ %.2f %n", product2, price2);
-            System.out.println("Testando1");
+            System.out.println("Testando, código1");
+>>>>>>> 67858697f72db7b6116a7afabd1abffae78fb1e1
         }
     }
 
