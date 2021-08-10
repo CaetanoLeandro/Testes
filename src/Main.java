@@ -17,8 +17,12 @@
             double price3= 450.20;
 =======
             double price2 = 650.50;
+<<<<<<< HEAD
             double price4= 450.30;
 >>>>>>> d765b84... Mudança de variavél price 3
+=======
+            double price3= 450.30;
+>>>>>>> parent of d765b84... Mudança de variavél price 3
             double measure = 53.12345;
 
             System.out.println("Producta for sale:");
