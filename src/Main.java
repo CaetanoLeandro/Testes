@@ -16,7 +16,7 @@
             double price3= 450.30;
             double measure = 53.12345;
 
-            System.out.println("Producta:");
+            System.out.println("Producta for sale:");
             System.out.printf("%s, which price is R$ %.2f %n", product1, price1);
             System.out.printf("%s, which price is R$ %.2f %n", product2, price2);
             System.out.println("Testando, código");
