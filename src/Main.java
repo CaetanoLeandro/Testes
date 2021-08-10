@@ -13,7 +13,7 @@
 
             double price1 = 2100.0;
             double price2 = 6500.50;
-            double price4= 450.30;
+            double price3= 450.30;
             double measure = 53.12345;
 
             System.out.println("Producta for sale:");
