@@ -12,8 +12,13 @@
             char gender = 'F';
 
             double price1 = 2100.0;
+<<<<<<< HEAD
             double price2 = 6500.50;
             double price3= 450.20;
+=======
+            double price2 = 650.50;
+            double price4= 450.30;
+>>>>>>> d765b84... Mudança de variavél price 3
             double measure = 53.12345;
 
             System.out.println("Producta for sale:");
