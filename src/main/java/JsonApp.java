@@ -25,7 +25,7 @@ public class JsonApp {
         jsonObject.put("Age", p1.getAge());
 
         try {
-            writeFile = new FileWriter("out.json");
+            writeFile = new FileWriter("json-file");
             writeFile.write(jsonObject.toJSONString());
             writeFile.close();
 
@@ -34,11 +34,11 @@ public class JsonApp {
         }
         System.out.println("################# JSON #####################");
         System.out.println(jsonObject);
-        String json = jsonObject.toString();
+        p1.setJson(jsonObject.toJSONString());
         System.out.println("############################################");
         System.out.println("");
 
-        Person person = new Gson().fromJson(json, Person.class);
+        Person person = new Gson().fromJson(p1.getJson(), Person.class);
         System.out.println("");
         System.out.println("################# OBJ #####################");
         System.out.println("Name: " + person.getName());

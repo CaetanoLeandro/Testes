@@ -7,6 +7,15 @@ public class Person {
     private String name;
     private String age;
 
+    private String json;
+
+    public String getJson() {
+        return json;
+    }
+
+    public void setJson(String json) {
+        this.json = json;
+    }
 
     public String getName() {
         return name;
