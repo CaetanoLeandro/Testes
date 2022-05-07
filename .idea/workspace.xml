@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4c27852-364f-4257-9400-3064d91abac4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json-file" beforeDir="false" afterPath="$PROJECT_DIR$/json-file" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JsonApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
+    <list default="true" id="c4c27852-364f-4257-9400-3064d91abac4" name="Changes" comment="final json-Obj-json">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +41,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/forttiori/projetos/json-appl",
     "nodejs_package_manager_path": "npm"
@@ -86,8 +84,16 @@
       <option name="presentableId" value="Default" />
       <updated>1651890275218</updated>
       <workItem from="1651890277118" duration="5582000" />
-      <workItem from="1651940172571" duration="10759000" />
+      <workItem from="1651940172571" duration="11131000" />
     </task>
+    <task id="LOCAL-00001" summary="final json-Obj-json">
+      <created>1651951135372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651951135372</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +112,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="final json-Obj-json" />
+    <option name="LAST_COMMIT_MESSAGE" value="final json-Obj-json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
