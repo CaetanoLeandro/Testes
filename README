@@ -1,4 +1,45 @@
-Esta aplicação basicamente recebe via terminal, dois valores (digitados pelo usuário), uma String e um Interger.
- Transformá-os em um arquivo Json e posteriormente, transforma  em um objeto
+Esta aplicação basicamente recebe via terminal, dois valores (digitados pelo usuário), uma String (nome do usuário)
+e um Interger (Idade, do usuário). Transformá-os em um arquivo Json e posteriormente, transforma  em um objeto.
 
->>>> GITHUB: https://github.com/CaetanoLeandro/Testes/tree/json-object <<<<<
+ # Cenários:
+
+----- #1:
+ Write your name:
+ Leandro
+ Write your name, using whole numbers:
+ 39
+
+ Saídas:
+
+ ################# JSON #####################
+ {"name":"Leandro","age":39}
+ ############################################
+
+
+ ################# OBJ #####################
+ Name: Leandro
+ Age: 39
+ ############################################
+
+----- #2:
+ Write your name:
+ Caetano
+ Write your name, using whole numbers:
+ 30
+
+ Saídas:
+
+ ################# JSON #####################
+ {"name":"Caetano","age":30}
+ ############################################
+
+
+ ################# OBJ #####################
+ Name: Caetano
+ Age: 30
+ ############################################
+
+
+ # Desenvolvido com Intellij em Java 17 (Gradle), sistema operacional Ubuntu/Linux
+
+>>>> GITHUB do projeto: https://github.com/CaetanoLeandro/Testes/tree/json-object <<<<<

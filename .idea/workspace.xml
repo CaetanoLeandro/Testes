@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c27852-364f-4257-9400-3064d91abac4" name="Changes" comment="final json-Obj-json">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README" beforeDir="false" afterPath="$PROJECT_DIR$/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json-file" beforeDir="false" afterPath="$PROJECT_DIR$/json-file" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651890275218</updated>
       <workItem from="1651890277118" duration="5582000" />
-      <workItem from="1651940172571" duration="12684000" />
+      <workItem from="1651940172571" duration="13362000" />
     </task>
     <task id="LOCAL-00001" summary="final json-Obj-json">
       <created>1651951135372</created>
