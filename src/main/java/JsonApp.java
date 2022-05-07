@@ -1,36 +1,28 @@
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
+import com.google.gson.Gson;
 import org.json.simple.JSONObject;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-
 public class JsonApp {
 
-    @SuppressWarnings("unchecked")
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
         Person p1 = new Person();
 
         JSONObject jsonObject = new JSONObject();
-        FileWriter writeFile = null;
+        FileWriter writeFile;
 
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.enable(SerializationFeature.INDENT_OUTPUT);
+        System.out.println("Write your name: ");
+        p1.setName((sc.next()));
 
+        System.out.println("Write your age: ");
+        p1.setAge((sc.next()));
 
-        System.out.println("Write your name");
-        p1.name = (sc.next());
-
-        System.out.println("Write your age");
-        p1.age = (sc.next());
-
-        jsonObject.put("name", p1.name);
-        jsonObject.put("Age", p1.age);
+        jsonObject.put("name", p1.getName());
+        jsonObject.put("Age", p1.getAge());
 
         try {
             writeFile = new FileWriter("out.json");
@@ -40,14 +32,17 @@ public class JsonApp {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("################# JSON #####################");
         System.out.println(jsonObject);
+        String json = jsonObject.toString();
+        System.out.println("############################################");
+        System.out.println("");
 
-        try {
-            Person person = mapper.readValue(new File"{name :}", Person.class);
-            System.out.println("Name: " + person.name);
-            System.out.println("Age: " + person.age);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        Person person = new Gson().fromJson(json, Person.class);
+        System.out.println("");
+        System.out.println("################# OBJ #####################");
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+        System.out.println("############################################");
     }
 }
