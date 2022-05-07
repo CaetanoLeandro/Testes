@@ -1,2 +1,4 @@
 Esta aplicação basicamente recebe via terminal, dois valores (digitados pelo usuário), uma String e um Interger.
  Transformá-os em um arquivo Json e posteriormente, transforma  em um objeto
+
+>>>> GITHUB: https://github.com/CaetanoLeandro/Testes/tree/json-object <<<<<
