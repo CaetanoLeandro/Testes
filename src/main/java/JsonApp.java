@@ -18,11 +18,11 @@ public class JsonApp {
         System.out.println("Write your name: ");
         p1.setName((sc.next()));
 
-        System.out.println("Write your age: ");
-        p1.setAge((sc.next()));
+        System.out.println("Write your name, using whole numbers: ");
+        p1.setAge((sc.nextInt()));
 
         jsonObject.put("name", p1.getName());
-        jsonObject.put("Age", p1.getAge());
+        jsonObject.put("age", p1.getAge());
 
         try {
             writeFile = new FileWriter("json-file");
