@@ -1,6 +1,11 @@
 Esta aplicação basicamente recebe via terminal, um link de um repositório remoto, que contém um JSON.
 E devolve uma liste de objetos .
 
+>>>> link para exemplo, abaixo:
+
+https://gist.githubusercontent.com/guilhermefainer/40876d3c4149640b4ce8d20bcb14f6c7/
+raw/6b60c6f467712e1cf8ec0d3d922e9c6e501ec212/input.json
+
  # Cenário:
 
 ----- #1:
