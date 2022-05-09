@@ -1,0 +1,36 @@
+Esta aplicação basicamente recebe via terminal, um link de um repositório remoto, que contém um JSON.
+E devolve uma liste de objetos .
+
+ # Cenário:
+
+----- #1:
+ > Task :LeitorURL.main()
+ Write a Json link:
+ https://gist.githubusercontent.com/guilhermefainer/40876d3c4149640b4ce8d20bcb14f6c7/raw
+ /6b60c6f467712e1cf8ec0d3d922e9c6e501ec212/input.json
+ JSON recebido!
+ {"id":"F1","orderId":"003666","channelId":"site","clientId":"sony","status":"TREATMENT","extensionAttributes":
+ {"acceptGiftcard":true,"giftcardCurrency":"USD","giftcardType":"GIFTCARD"},"createdAt":"2022-04-08T07:06:18.000Z",
+ "processedAt":"2022-04-29T13:49:03.000Z","items":[{"sku":"100085110","name":"PlayStation 4 500GB Console","quantity":1,
+ "stockType":"PHYSICAL","itemType":"CONSOLE","totals":{"price":1599.99,"totalAmount":1604.99,"priceDiscounted":1599.99,
+ "proportionalShippingAmount":5}},{"sku":"100080466","name":"Dark souls 3","quantity":1,"stockType":"PHYSICAL",
+ "itemType":"GAME","totals":{"price":129.99,"totalAmount":133.32,"priceDiscounted":129.99,
+ "proportionalShippingAmount":3.33}},{"sku":"982440469","name":"Tribes of Midgard","quantity":1,
+ "stockType":"DIGITAL","itemType":"OTHER","totals":{"price":39.99,"totalAmount":39.99,"priceDiscounted":39.99,
+ "proportionalShippingAmount":0}}]}
+
+ _____________________________________________________
+
+ {createdAt=2022-04-08T07:06:18.000Z, clientId=sony, orderId=003666, extensionAttributes={acceptGiftcard=true,
+  giftcardCurrency=USD, giftcardType=GIFTCARD}, processedAt=2022-04-29T13:49:03.000Z, id=F1, items=[{sku=100085110,
+   name=PlayStation 4 500GB Console, quantity=1, stockType=PHYSICAL, itemType=CONSOLE, totals={price=1599.99,
+   totalAmount=1604.99, priceDiscounted=1599.99, proportionalShippingAmount=5}}, {sku=100080466, name=Dark souls 3,
+   quantity=1, stockType=PHYSICAL, itemType=GAME, totals={price=129.99, totalAmount=133.32, priceDiscounted=129.99,
+   proportionalShippingAmount=3.33}}, {sku=982440469, name=Tribes of Midgard, quantity=1, stockType=DIGITAL,
+   itemType=OTHER, totals={price=39.99, totalAmount=39.99, priceDiscounted=39.99, proportionalShippingAmount=0}}],
+    channelId=site, status=TREATMENT}
+
+
+ # Desenvolvido com Intellij em Java 17 (Gradle), sistema operacional Ubuntu/Linux
+
+>>>> GITHUB do projeto: https://github.com/CaetanoLeandro/Testes/tree/json-link <<<<<
