@@ -1,0 +1,45 @@
+private static String URL = "https://gist.github.com/guilhermefainer/40876d3c4149640b4ce8d20bcb14f6c7";
+
+private void leitorJson(String url)
+    throws URISyntaxException, JSONException, MalformedURLException, IOException {
+    JSONTokener tokener = null;
+    JSONObject principal = null;
+    JSONArray arrayDeJson = null;
+    String urlSegundaVez = null;
+    URI urlAPI = new URI(url);
+    do {
+        if (urlSegundaVez == null) {
+            tokener = new JSONTokener(urlAPI.toURL().openStream());
+
+            principal = new JSONObject(tokener);
+
+            arrayDeJson = principal.getJSONArray("results");
+        } else {
+
+            URI segundaURL = new URI(urlSegundaVez);
+
+            tokener = new JSONTokener(segundaURL.toURL().openStream());
+
+            principal = new JSONObject(tokener);
+
+            arrayDeJson = principal.getJSONArray("results");
+        }
+
+        ArrayList<String> objetosJSON = new ArrayList<String>();
+
+        int tamanho = arrayDeJson.length();
+
+        for (int i = 0; i < tamanho; i++) {
+            String novoObjtoJSON = arrayDeJson.getJSONObject(i).getString("text").replaceAll("Resenha completa",
+                    " ");
+            System.out.println(novoObjtoJSON.toString());
+            objetosJSON.add(novoObjtoJSON);
+        }
+            tokener = null;
+            arrayDeJson = null;
+            urlSegundaVez = null;
+            urlSegundaVez = principal.get("next").toString();
+            principal = null;
+    } while (urlSegundaVez != null);
+
+}
